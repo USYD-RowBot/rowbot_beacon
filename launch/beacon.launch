@@ -1,0 +1,12 @@
+<launch>
+  <node pkg="rowbot_beacon" type="beacon.py" name="beacon_control" output="screen">
+    <param name="service_name" value="relay_command"/>
+    <param name="red_pin" type="int" value="21"/>
+    <param name="orange_pin" type="int" value="22"/>
+    <param name="green_pin" type="int" value="23"/>
+    <param name="buzzer_pin" type="int" value="24"/>
+    <param name="rate" type="double" value ="10"/>
+
+
+  </node>
+</launch>
